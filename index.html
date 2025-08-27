@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Yitong He</title>
-  <style>
+   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -13,12 +13,17 @@
       gap: 25px;
     }
     .entry {
-      display: flex;
+      display: grid;
+      grid-template-columns: 150px 200px 1fr; /* date | location | content */
       gap: 20px;
+      align-items: start;
     }
     .date {
       font-weight: bold;
-      min-width: 100px;
+    }
+    .location {
+      font-style: italic;
+      color: #444;
     }
     .content a {
       color: #d633d6; /* purple link color */
@@ -55,9 +60,22 @@ I am a senior student at <a href="https://en.xjtu.edu.cn/">Xi'an Jiaotong Univer
   
 <B><FONT SIZE=5><P ALIGN="CENTER">Education</P></B></FONT>
   <div class="timeline">
+  
+    
+   <div class="entry">
+     <div class="date">Sep.2022–July.2026(expected)</div>
+     <div class="location">Xi'an, China</div>
+     <div class="content">
+       I am a member of the <a href="#">Honors Science Program (Mathematics)</a>, my current GPA is 3.99/4.3 (92.41/100) and ranked 6/32.
+     </div>
+   </div>
 
+
+
+
+    
     <div class="entry">
-      <div class="date">Dec 15, 2025</div>
+      <div class="date">Sep.2022–July.2026(expected)</div>
       <div class="content">
         Honored to be make the List Teachers Ranked as Excellent by Their Students! 
         I had a great time teaching my 
